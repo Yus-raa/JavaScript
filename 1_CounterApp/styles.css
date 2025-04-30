@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-image: url("bacground.jpg");
+    background-size: cover;
+    background-position: center;
+    /* text-align: center; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(0, 119, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#increment-btn {
+    background: darkred;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#save-btn {
+    background: darkgreen;
+}
