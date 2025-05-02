@@ -1,0 +1,83 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #0D4715;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading {
+    font-family: "Verdana", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    color: rgba(238, 238, 238, 1);
+    text-align: center;
+}
+h3{
+    font-family: "Verdana", sans-serif;
+    color: #C1D8C3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+.team-b, .team-a {
+    width: 18em;
+    padding: 1em;
+}
+.scoreboard-a, .scoreboard-b {
+    width: 8.75em;
+    background-color: rgba(8, 0, 1, 1);
+    margin: 1.25em auto;
+    border-radius: 5px;
+}
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5.625rem;
+    text-align: center;
+    color: #F8ED8C;
+    padding-top: 0.18em;
+    padding-bottom: 0.18em;
+}
+.buttons {
+    display: flex;
+    gap: 0.4em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+button{
+    border: 0;
+    padding: 0.5625em;
+    cursor: pointer;
+    background-color: transparent;
+    color: #6A9C89;
+    border: 2px solid #6A9C89;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-family: 'Orbitron', sans-serif;
+}
+.resetbtn{
+    letter-spacing: 0.125em;
+}
+  
+.buttons > button:active {
+    transform: scale(0.96);
+}

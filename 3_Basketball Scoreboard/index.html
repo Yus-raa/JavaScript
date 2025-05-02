@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">Scoreboard</div>
+    <main class="container">
+        <!-- Team-A Start -->
+		<div class="team-a">
+			<h3>TEAM A</h3>
+			<div class="scoreboard-a">
+				<h2 id="a-score">0</h2>
+			</div>
+			<!-- Buttons -->
+			<div class="buttons">
+				<button id="a-score-btn-1" onclick="aScore1()">+1</button>
+				<button id="a-score-btn-2" onclick="aScore2()">+2</button>
+				<button id="a-score-btn-3" onclick="aScore3()">+3</button>
+				<button class="resetbtn" id="reset-team-a-score" onclick="resetA()">Reset</button>
+			</div>
+		</div>
+		<!-- Team-A End -->
+
+        <!-- Team-B Start -->
+		<div class="team-b">
+			<h3>TEAM B</h3>
+			<div class="scoreboard-b">
+				<h2 id="b-score">0</h2>
+			</div>
+
+			<!-- Buttons -->
+			<div class="buttons">
+				<button id="b-score-btn-1" onclick="bScore1()">+1</button>
+				<button id="b-score-btn-2" onclick="bScore2()">+2</button>
+				<button id="b-score-btn-3" onclick="bScore3()">+3</button>
+				<button class="resetbtn" id="reset-team-b-score" onclick="resetB()">Reset</button>
+			</div>
+		</div>
+		<!-- Team-B End -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
