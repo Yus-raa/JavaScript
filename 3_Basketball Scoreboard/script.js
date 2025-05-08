@@ -12,46 +12,47 @@ let b2Score = document.getElementById('b-score-btn-2');
 let b3Score = document.getElementById('b-score-btn-3');
 let bReset = document.getElementById('reset-team-b-score');
 
-let score = 0;
+let scoreA = 0;
+let scoreB = 0;
 
 // Function Team A
 function aScore1(){
-    score += 1;
+    scoreA += 1;
     displayScoreA()
 }
 function aScore2(){
-    score += 2;
+    scoreA += 2;
     displayScoreA()
 }
 function aScore3(){
-    score += 3;
+    scoreA += 3;
     displayScoreA()
 }
 function displayScoreA(){
-    aScore.textContent = score;
+    aScore.textContent = scoreA;
 }
 function resetA(){
-    score = 0;
+    scoreA = 0;
     displayScoreA()
 }
 
 // Function Team B
 function bScore1(){
-    score += 1;
+    scoreB += 1;
     displayScoreB()
 }
 function bScore2(){
-    score += 2;
+    scoreB += 2;
     displayScoreB()
 }
 function bScore3(){
-    score += 3;
+    scoreB += 3;
     displayScoreB()
 }
 function displayScoreB(){
-    bScore.textContent = score;
+    bScore.textContent = scoreB;
 }
 function resetB(){
-    score = 0;
+    scoreB = 0;
     displayScoreB()
 }
