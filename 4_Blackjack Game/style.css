@@ -1,0 +1,65 @@
+ *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+ }
+ html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('./Images/background.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .container{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+ }
+ h1{
+    color: goldenrod;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 20px;
+ }
+ #message-el{
+    font-style: italic;
+    margin: 25px;
+    font-weight: 400;
+    color: aliceblue;
+ }
+ button{
+    color: #016f32;
+    width: 200px;
+    background-color: goldenrod;
+    border: none;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 2px;
+ }
+ .btns{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+ }
+ p{
+    margin: 20px;
+ }
+ #play-again-btn{
+   display: none;
+ }
+ #game-over{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-weight: 300;
+   font-size: 45px;
+   letter-spacing: 2px;
+   color: goldenrod;
+   display: none;
+ }
