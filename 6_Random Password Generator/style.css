@@ -102,8 +102,9 @@ button{
 }
 #toast {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #00dfa2;
   color: white;
   padding: 10px 16px;
