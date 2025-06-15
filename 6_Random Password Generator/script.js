@@ -2,6 +2,9 @@ let passwordLength = document.querySelector("#sliderValue");
 let slider = document.querySelector("#lengthRange");
 let passwords = document.querySelectorAll(".password");
 let toast = document.getElementById("toast");
+const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
+let generateBtn = document.getElementById("generatebtn");
+
 
 passwords.forEach(password => {
   password.addEventListener("click", function () {
@@ -14,6 +17,21 @@ passwords.forEach(password => {
   });
 });
 
+// Generate 4 passwords and display them
+generateBtn.addEventListener("click", () => {
+  passwords.forEach(password => {
+    password.textContent = generatePassword(slider.value); 
+  });
+});
+
+// Function to generate a random password of given length
+function generatePassword(length = 10) {
+  let password = "";
+  for (let i = 0; i < length; i++) {
+    password += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return password;
+}
 function showToast(message) {
   toast.textContent = message;
   toast.classList.add("show");
