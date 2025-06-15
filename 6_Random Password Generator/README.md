@@ -3,7 +3,7 @@
 A web app to generate random passwords. Users can instantly generate 4 different passwords with customizable lengths and easily copy them to the clipboard with a single click.
 
 ---
-![Screenshot](6_Random Password Generator\PasswordGenerator.png)
+![Screenshot](PasswordGenerator.png)
 ---
 
 ## Features
