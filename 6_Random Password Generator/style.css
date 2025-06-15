@@ -1,0 +1,102 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Put it behind your content */
+  background: #1c1c1c; /* Optional: add a background color to test */
+}
+.container{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 50%;
+    height: 90%;
+    border-radius: 5px;
+    background-color: #1f2937;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+h1{
+    font-size: 50px;
+    color: #00DFA2;
+    line-height: 60px;
+}
+p{
+    color: rgb(196, 202, 207);
+    padding: 20px 0px 10px 0px;
+}
+label{
+    color: rgb(196, 202, 207);
+    font-size: 18px;
+    padding: 20px;
+}
+span{
+    color: #00DFA2;
+    font-weight: 800;
+
+}
+#lengthRange{
+    width: 50%;
+    appearance: none;
+    height: 18px;
+    display: block;
+    border-radius: 10px;
+    background-color: #00FFAB;
+}
+#lengthRange::-webkit-slider-thumb {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #00DFA2;
+  cursor: pointer;
+  border: none;
+  margin-top: -0px;
+}
+
+button{
+    margin: 20px;
+    padding: 8px 15px;
+    border: 2px solid #00DFA2;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    background-color: #00DFA2;
+    font-weight: 900;
+}
+.passwords{
+    width: 80%;
+    height: 110px;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, auto);   /* 2 rows */
+    gap: 10px;
+}
+.password{
+    border-radius: 8px;
+    border: 1px solid #00DFA2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
