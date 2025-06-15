@@ -64,17 +64,6 @@ For truly secure password generation, consider using APIs or libraries like:
 
 ---
 
-## 📁 Project Structure
-
-```bash
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-└── screenshot.png
-
----
-
 ## 👩‍💻 Author
 
 **Yusra**   
