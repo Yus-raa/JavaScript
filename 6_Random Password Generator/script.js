@@ -1,5 +1,17 @@
 let passwordLength = document.querySelector("#sliderValue");
 let slider = document.querySelector("#lengthRange");
+let passwords = document.querySelectorAll(".password");
+
+passwords.forEach(password => {
+  password.addEventListener("click", function () {
+    const text = this.innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Password Copied!");
+    }).catch(err => {
+      console.log("Error copying text!", err);
+    });
+  });
+});
 
 slider.addEventListener('input', () => { passwordLength.textContent = slider.value });
 

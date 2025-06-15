@@ -16,9 +16,9 @@ html, body{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: -1; /* Put it behind your content */
-  background: #1c1c1c; /* Optional: add a background color to test */
+  min-height: 100%;
+  z-index: -1; 
+  background: #1c1c1c; 
 }
 .container{
     position: relative;
@@ -35,9 +35,9 @@ html, body{
 
 }
 h1{
-    font-size: 50px;
+    font-size: 40px;
     color: #00DFA2;
-    line-height: 60px;
+    line-height: 40px;
 }
 p{
     color: rgb(196, 202, 207);
@@ -73,7 +73,7 @@ span{
 }
 
 button{
-    margin: 20px;
+    margin: 35px;
     padding: 8px 15px;
     border: 2px solid #00DFA2;
     border-radius: 20px;
@@ -84,19 +84,47 @@ button{
     font-weight: 900;
 }
 .passwords{
-    width: 80%;
+    width: 70%;
     height: 110px;
-    border: 1px solid white;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     grid-template-rows: repeat(2, auto);   /* 2 rows */
-    gap: 10px;
+    gap: 15px;
 }
 .password{
     border-radius: 8px;
-    border: 1px solid #00DFA2;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(219, 226, 232);
+    background-color: #304158;
 }
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00dfa2;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+#toast.show {
+  opacity: 1;
+}
+
+@media (max-width: 768px) { 
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .passwords{
+        width: 85%;
+    }
+ }
