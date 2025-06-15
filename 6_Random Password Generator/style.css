@@ -83,6 +83,10 @@ button{
     background-color: #00DFA2;
     font-weight: 900;
 }
+button:hover{
+    color: #00DFA2;
+    background-color: rgb(219, 226, 232);
+}
 .passwords{
     width: 70%;
     height: 110px;
