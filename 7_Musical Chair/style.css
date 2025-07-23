@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  transition: background-color 0.5s ease;
+  background-color: #f6d6d6; /* Light pink */
+}
+
+#app {
+  position: relative;
+  z-index: 2;
+  margin-top: 120px;
+}
+h1 {
+  color: #fffadc;
+  font-weight: 900;
+}
+.playing {
+  background-color: #c0f7d1; /* Mint green */
+}
+
+.stopped {
+  background-color: #ffd6d6; /* Soft red-pink */
+}
+
+#countdown {
+  font-size: 28px;
+  margin-top: 20px;
+  color: #444;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#toggleBtn {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  background-color: #56dfcf; /* Cool purple */
+  box-shadow: 0 8px 20px #56dfcf52;
+  transition: all 0.3s ease;
+}
+
+#toggleBtn:hover {
+  transform: scale(1.05);
+  background-color: #0abab5;
+}
