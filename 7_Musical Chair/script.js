@@ -69,7 +69,7 @@
     }
 
     function startCountdownThenPlayNextRound() {
-      countdownTime = 30;
+      countdownTime = 60;
       updateCountdownDisplay();
 
       countdownInterval = setInterval(() => {
