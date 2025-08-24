@@ -13,7 +13,7 @@ It’s a fun little drum kit app built with **HTML, CSS, and JavaScript**, where
 ---
 
 ## Preview
-![Drum Kit Screenshot](background.jpg)
+![Drum Kit Screenshot](Preview.png)
 
 ---
 
@@ -50,7 +50,7 @@ It’s a fun little drum kit app built with **HTML, CSS, and JavaScript**, where
 
 ## 🔗 Useful Resources
 - [MDN Web Docs: Keyboard Events](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent) Great reference for understanding keyboard event properties  
-- [MDN Web Docs: data-* Attributes]https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) Explains how to use custom data- attributes effectively.
+- [MDN Web Docs: data-* Attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) Explains how to use custom data- attributes effectively.
 
 ---
 
