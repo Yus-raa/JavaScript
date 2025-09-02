@@ -74,6 +74,7 @@ const users = [
 // show all the users
 // filter everytime input occurs
 // show filtered users
+
 function showUsers(ary){
     ary.forEach(function(user){
         // create outer card div
