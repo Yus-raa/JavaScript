@@ -15,26 +15,26 @@ If no user matches the search, a friendly **"No users found"** message is displa
 
 ---
 
-## 🚀 How to Use
+## How to Use
 1. Clone or download the repository.
 2. Open `index.html` in your browser.
 3. Type in the search bar to filter users by **name** or **bio**.
-4. If no users match your search, you’ll see a "No users found 😢" message.
+4. If no users match your search, you’ll see a "No users found" message.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 - **HTML5** – Structure of the app.
 - **CSS3** (with Tailwind CSS) – Styling and layout.
 - **JavaScript (ES6)** – Logic for rendering users and filtering.
 
 ---
 
-## 📚 What I Learned
+## What I Learned
 - How to **dynamically create and append DOM elements** using JavaScript.
 - Implementing a **search filter** that works on multiple properties.
 - Clearing and re-rendering UI components on every input change.
-- Handling **empty search results** gracefully.
+- Handling **empty search results**.
 
 ---
 
@@ -45,7 +45,7 @@ If no user matches the search, a friendly **"No users found"** message is displa
 
 ---
 
-## 👩‍💻 Author
+## Author
 **Yusra Yaseen**  
 
 - GitHub: [@Yus-raa](https://github.com/Yus-raa)  
