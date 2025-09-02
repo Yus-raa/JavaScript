@@ -75,45 +75,70 @@ const users = [
 // filter everytime input occurs
 // show filtered users
 
-function showUsers(ary){
-    ary.forEach(function(user){
-        // create outer card div
-        const card = document.createElement("div");
-        card.classList.add("card");
+function showUsers(ary) {
+  const container = document.querySelector(".cards");
+  container.innerHTML = ""; // clear old cards first
 
-        // create image
-        const img = document.createElement("img");
-        img.src = user.pic;
-        img.classList.add("bg-img");
+  if (ary.length === 0) {
+    // show message if no users found
+    const msg = document.createElement("p");
+    msg.textContent = "No users found 😢";
+    msg.style.color = "white";
+    msg.style.fontSize = "18px";
+    msg.style.marginTop = "20px";
+    container.appendChild(msg);
+    return;
+  }
 
-        // create blured layer div
-        const bluredLayer = document.createElement("div");
-        bluredLayer.style.backgroundImage = `url(${user.pic})`;
-        bluredLayer.classList.add("blurred-layer");
+  ary.forEach(function (user) {
+    // create outer card div
+    const card = document.createElement("div");
+    card.classList.add("card");
 
-        // create content div
-        const content = document.createElement("div");
-        content.classList.add("content");
+    // create image
+    const img = document.createElement("img");
+    img.src = user.pic;
+    img.classList.add("bg-img");
 
-        // create h3 and paragraph
-        const heading = document.createElement("h3");
-        heading.textContent = user.name;
+    // create blurred layer div
+    const bluredLayer = document.createElement("div");
+    bluredLayer.style.backgroundImage = `url(${user.pic})`;
+    bluredLayer.classList.add("blurred-layer");
 
-        const para = document.createElement("p")
-        para.textContent = user.bios;
+    // create content div
+    const content = document.createElement("div");
+    content.classList.add("content");
 
-        // append heading and paragraph to content
-        content.appendChild(heading);
-        content.appendChild(para);
+    // create h3 and paragraph
+    const heading = document.createElement("h3");
+    heading.textContent = user.name;
 
-        // append all to the card
-        card.appendChild(img);
-        card.appendChild(bluredLayer);
-        card.appendChild(content);
+    const para = document.createElement("p");
+    para.textContent = user.bios;
 
-        // finally append card to the body
-        document.querySelector(".cards").appendChild(card);
-        })
+    content.appendChild(heading);
+    content.appendChild(para);
 
+    card.appendChild(img);
+    card.appendChild(bluredLayer);
+    card.appendChild(content);
+
+    container.appendChild(card);
+  });
 }
+
 showUsers(users)
+
+let inp = document.querySelector("input");
+inp.addEventListener("input", () => {
+    const searchValue = inp.value.toLowerCase();
+    let filteredUser = users.filter((user) => {
+        return (
+            user.name.toLowerCase().includes(searchValue) ||
+            user.bios.toLowerCase().includes(searchValue)
+        );
+    });
+
+    document.querySelector(".cards").innerHTML = "";
+    showUsers(filteredUser);
+})
