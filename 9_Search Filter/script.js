@@ -82,7 +82,7 @@ function showUsers(ary) {
   if (ary.length === 0) {
     // show message if no users found
     const msg = document.createElement("p");
-    msg.textContent = "No users found 😢";
+    msg.textContent = "No Users Found!";
     msg.style.color = "white";
     msg.style.fontSize = "18px";
     msg.style.marginTop = "20px";
